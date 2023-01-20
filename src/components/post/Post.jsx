@@ -62,5 +62,6 @@ export const Post = ({ post }) => {
                 </div>
             </div>
         </div>
+        // 変更
     );
 };
