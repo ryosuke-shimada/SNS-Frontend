@@ -3,12 +3,13 @@ import React from "react";
 import "./Share.css";
 
 export const Share = () => {
+    const PUBLIC_FOLDER = process.env.REACT_APP_PUBLIC_FOLDER;
     return (
         <div className="share">
             <div className="shareWrapper">
                 <div className="shareTop">
                     <img
-                        src="./assets/person/1.jpeg"
+                        src={PUBLIC_FOLDER + "/person/1.jpeg"}
                         alt=""
                         className="shareProfileImg"
                     />
