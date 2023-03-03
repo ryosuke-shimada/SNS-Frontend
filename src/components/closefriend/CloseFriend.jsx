@@ -5,7 +5,11 @@ export const CloseFriend = ({ user }) => {
     return (
         <li className="sidebarFriend">
             <img
-                src={PUBLIC_FOLDER + user.profilePicture}
+                src={
+                    user.profilePicture
+                        ? PUBLIC_FOLDER + user.profilePicture
+                        : PUBLIC_FOLDER + "/person/noAvatar.png"
+                }
                 alt=""
                 className="sidebarFriendImg"
             />

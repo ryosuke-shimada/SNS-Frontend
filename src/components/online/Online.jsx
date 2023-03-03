@@ -7,7 +7,11 @@ export const Online = ({ user }) => {
         <li className="rightbarFriend">
             <div className="rightbarProfileImgContainer">
                 <img
-                    src={PUBLIC_FOLDER + user.profilePicture}
+                    src={
+                        user.profilePicture
+                            ? PUBLIC_FOLDER + user.profilePicture
+                            : PUBLIC_FOLDER + "/person/noAvatar.png"
+                    }
                     alt=""
                     className="rightbarProfileImg"
                 />

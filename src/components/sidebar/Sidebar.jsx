@@ -18,15 +18,16 @@ export const Sidebar = () => {
         <div className="sidebar">
             <div className="sidebarWrapper">
                 <ul className="sidebarList">
-                    <li className="sidebarListItem">
-                        <Home className="sidebarIcon" />
-                        <Link
-                            to="/"
-                            style={{ textDecoration: "none", color: "black" }}
-                        >
+                    <Link
+                        to="/"
+                        style={{ textDecoration: "none", color: "black" }}
+                    >
+                        <li className="sidebarListItem">
+                            <Home className="sidebarIcon" />
+
                             <span className="sidebarListItemText">ホーム</span>
-                        </Link>
-                    </li>
+                        </li>{" "}
+                    </Link>
                     <li className="sidebarListItem">
                         <Search className="sidebarIcon" />
                         <span className="sidebarListItemText">検索</span>
@@ -45,17 +46,18 @@ export const Sidebar = () => {
                             ブックマーク
                         </span>
                     </li>
-                    <li className="sidebarListItem">
-                        <Person className="sidebarIcon" />
-                        <Link
-                            to="/profile/:username"
-                            style={{ textDecoration: "none", color: "black" }}
-                        >
+                    <Link
+                        to="/profile/:username"
+                        style={{ textDecoration: "none", color: "black" }}
+                    >
+                        <li className="sidebarListItem">
+                            <Person className="sidebarIcon" />
+
                             <span className="sidebarListItemText">
                                 プロフィール
                             </span>
-                        </Link>
-                    </li>
+                        </li>{" "}
+                    </Link>
                     <li className="sidebarListItem">
                         <Settings className="sidebarIcon" />
                         <span className="sidebarListItemText">設定</span>

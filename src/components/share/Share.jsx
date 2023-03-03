@@ -9,7 +9,7 @@ export const Share = () => {
             <div className="shareWrapper">
                 <div className="shareTop">
                     <img
-                        src={PUBLIC_FOLDER + "/person/1.jpeg"}
+                        src={PUBLIC_FOLDER + "/person/noAvatar.png"}
                         alt=""
                         className="shareProfileImg"
                     />
